@@ -1,0 +1,1520 @@
+
+        .hero{
+            background-color: black;
+            max-width:var(--max-width);
+            margin:auto;
+            padding:64px 24px 80px;
+            text-align:center;
+        }
+
+        .eyebrow{
+            font-size:15px;
+            color:white;
+            margin-bottom:12px;
+        }
+
+        .headline{
+            font-size:clamp(40px,6vw,48px);
+            font-weight:500;
+            color:white;
+            margin-bottom:20px;
+            line-height:1.1;
+        }
+
+        .headline sup{
+            font-size:.35em;
+            top:-.6em;
+        }
+
+        .subtext{
+            font-size:17px;
+            color: #ffffff;
+            margin-bottom:40px;
+        }
+
+        .media{
+            border-radius:14px;
+            overflow:hidden;
+        }
+
+        .media video{
+            width:100%;
+            /*display:block;*/
+        }
+
+        .desktop-video{
+            display:block;
+        }
+
+        .mobile-video{
+            display:none;
+        }
+
+
+        .card1920{
+            padding: 40px 23px 81px 23px;
+        }
+
+        .halo-thrill-section {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .halo-thrill-section h2 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .halo-thrill-section p {
+            font-size: 16px;
+            color: #bbb;
+            margin-bottom: 40px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .feature-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #777;
+            transition: all 0.3s ease;
+        }
+
+        .feature-item i {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .feature-item.active,
+        .feature-item:hover {
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        .explore-btn {
+            display: inline-block;
+            background-color: #fff;
+            color: #000;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .explore-btn:hover {
+            background-color: #ddd;
+        }
+
+        .no-border-table,
+        .no-border-table th,
+        .no-border-table td {
+            border: none !important;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+        }
+
+        /* Make td smaller on mobile */
+        @media (max-width: 768px) {
+            .no-border-table td,
+            .no-border-table th {
+                font-size: 13px;
+                padding: 6px 8px;
+                /*white-space: nowrap;*/
+            }
+        }
+
+        /* Color circle styles */
+        .circle {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            display: inline-block;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        .gap-2 > * {
+            margin-right: 6px;
+        }
+
+
+
+
+
+        .new-color-label .badge {
+            font-size: 12px;
+            padding: 5px 10px;
+        }
+
+
+
+
+
+
+        .dashboard {
+            background-color: #1a1a1a;
+            border-radius: 22px;
+            padding: 28px 22px;
+            width: 100%;
+            max-width: 340px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+            border: 1px solid #2e2e2e;
+        }
+        .device-name {
+            font-weight: 600;
+            font-size: 21px;
+            margin-bottom: 28px;
+            text-align: center;
+            color: #f0f0f0;
+            letter-spacing: 0.5px;
+        }
+        .menu-item {
+            padding: 2px 12px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #2a2a2a;
+            transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+            cursor: pointer;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .menu-item:hover {
+            background-color: #252525;
+            transform: translateX(6px);
+        }
+        .icon-circle {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: #2e2e2e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 18px;
+            color: #ffffff;
+            font-size: 19px;
+            transition: all 0.25s ease;
+        }
+        .menu-item:hover .icon-circle {
+            background-color: #3a3a3a;
+            transform: scale(1.05);
+        }
+        .menu-text {
+            font-size: 16px;
+            color: #e5e5e5;
+            font-weight: 500;
+            letter-spacing: 0.2px;
+        }
+
+
+
+        .colorcircle{
+            margin-top: -1px;
+        }
+        .title-comic{
+            margin-top: -90px;
+        }
+        .color-circle-1-wrapper {
+            position: relative;
+            width: 150px; /* Adjust as needed */
+            height: 150px;
+        }
+
+        .image-stack {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .bg-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            object-fit: cover;
+        }
+
+        .fg-img {
+            position: relative;
+            width: 100%;
+            z-index: 2;
+        }
+
+
+        #bikeImage {
+            width: 300px;
+            height: auto;
+            transition: 0.3s ease-in-out;
+        }
+
+        .color-selector {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .color-dot {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .color-dot:hover {
+            transform: scale(1.2);
+        }
+
+        .highlight {
+            color: #555;
+        }
+
+        .bike-container {
+            background: #e3eaf7;
+            padding: 40px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        /* Basic styling for the player container */
+        #waveform-container {
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        #waveform {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Styling for buttons */
+        .controls button {
+            background-color: #5d6261;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 30px;
+        }
+
+        .controls button:disabled {
+            background-color: #ddd;
+            cursor: not-allowed;
+        }
+
+        .slider-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-cards {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .left-card {
+            display: none; /* Hide all cards initially */
+            text-align: center;
+            border-radius: 20px;
+            padding: 20px;
+            color: white;
+        }
+
+        .left-card.active {
+            display: block; /* Show the active card */
+        }
+
+        .left-card img {
+
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .right-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .right-card {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            cursor: pointer;
+            border-radius: 20px;
+            background: linear-gradient(180deg, #080808 28.85%, #181818);
+            padding: 30px;
+            height: 90px;
+            transition: background-color 0.3s ease; /* Smooth transition */
+
+        }
+
+        .icon-circle {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: grey;
+            overflow: hidden;
+        }
+
+        .progress-ring {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid white;
+            border-radius: 50%;
+            box-sizing: border-box;
+            clip-path: circle(50%);
+            animation: preloader 4s linear infinite;
+        }
+
+        .right-card.active .progress-ring {
+            border-color: white;
+        }
+
+        .right-card.active {
+            background: linear-gradient(180deg, #323232, #454545); /* Active background color */
+        }
+
+        .right-card.active .icon-circle {
+            background-color: grey;
+        }
+
+        .right-card p {
+            font-size: 16px;
+            color: grey;
+            transition: color 0.3s ease; /* Smooth text color change */
+        }
+
+        .right-card.active p {
+            color: white; /* Text color for active state */
+        }
+
+        .icon-image{
+            width: 20px;
+        }
+
+        @keyframes  preloader {
+            0% {
+                clip-path: inset(0 0 100% 0);
+            }
+            50% {
+                clip-path: inset(0 0 0 0);
+            }
+            100% {
+                clip-path: inset(0 0 0 0);
+            }
+        }
+
+
+
+
+        #peek .modal-footer {
+            display: flex;
+            flex-shrink: 0;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-end;
+            padding: calc(var(--bs-modal-padding) - var(--bs-modal-footer-gap)* .5);
+            background-color: var(--bs-modal-footer-bg);
+            border-top: none;
+            border-bottom-right-radius: var(--bs-modal-inner-border-radius);
+            border-bottom-left-radius: var(--bs-modal-inner-border-radius);
+        }
+
+        .owl-dots {
+            text-align: center;
+            margin-top: 32px;
+            display: none;
+        }
+
+        /* Default styles for mobile devices */
+        .more-items {
+            position: relative;
+            z-index: 1;
+            background-color: white;
+            top: -15%;
+            left: 64%;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        /* Styles for tablets */
+        @media (min-width: 768px) {
+            .more-items {
+                left: 84%;
+            }
+        }
+
+        /* Styles for laptops and large screens */
+        @media (min-width: 1024px) {
+            .more-items {
+                left: 88%;
+            }
+        }
+
+        .color-circle-1 {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 8px;
+            cursor: pointer;
+            border: 2px solid #ccc;
+            transition: transform 0.2s ease;
+        }
+
+        .color-circle-1:hover {
+            transform: scale(1.1);
+            border-color: #333;
+        }
+
+        .gapof_circle {
+            display: inline-block;
+        }
+
+        @media  screen and (max-width: 480px) {
+            .desktop-video{
+                display:none;
+            }
+
+            .mobile-video{
+                display:block;
+            }
+
+            .hero{
+                padding:30px 16px 28px;
+            }
+
+            .subtext{
+                font-size:15px;
+                margin-bottom:28px;
+            }
+
+        }
+            .halo-thrill-section {
+                padding: 40px 15px;
+            }
+
+            .halo-thrill-section h2 {
+                font-size: 24px;
+            }
+
+            .halo-thrill-section p {
+                font-size: 14px;
+                margin-bottom: 30px;
+            }
+
+            .features {
+                gap: 20px;
+            }
+
+            .feature-item i {
+                font-size: 24px;
+            }
+
+            .explore-btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+
+        /*change color section*/
+
+
+
+             /* Match Screenshot Styling */
+         .faq-section {
+             background-color: rgb(247, 247, 247);
+         }
+        .accordion-button {
+            background: none;
+            box-shadow: none;
+            font-size: 1rem;
+            font-weight: 400;
+            color: #000;
+        }
+        .accordion-button::after {
+            background-size: 1rem;
+        }
+        .accordion-item {
+            background: none;
+        }
+        .accordion-body {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .accordion-button:focus {
+            border: none;
+            box-shadow: none;
+        }
+        .accordion-button {
+            border-radius: 0;
+            color: #000;
+            font-size: 20px;
+            background-color: #f7f7f7;
+            margin: 11px 0px;
+            font-weight: 100;
+        }
+
+        /*@media (max-width: 374px){*/
+        /*      #ather450 h2{*/
+        /*          font-size: 25px;*/
+        /*      }*/
+
+        @media (max-width: 410px){
+            #ather450 h2{
+                font-size: 26px;
+            }
+        }
+
+        @media (min-width: 320px) {
+
+
+            .color-circle-1 {
+                position: relative; /* so the badge positions relative to this circle */
+            }
+
+            .star-badge {
+                position: absolute;
+                top: -6px;
+                right: -5px;
+                background-color: green;
+                border: 2px solid green;
+                color: white;
+                border-radius: 50%;
+                width: 12px;
+                height: 12px;
+                display: flex; /* always visible */
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+            .star-mark {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background-color: green;
+                color: white;
+                font-size: 12px;
+                font-weight: bold;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                margin-right: 5px;
+            }
+            .star-label {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                font-weight: 500;
+                color: #fff; /* Adjust if needed */
+            }
+
+
+            #color-section-1 .container {
+                width: 80%;
+            }
+            .bike-colorsec {
+                margin-bottom: -57px;
+                /* margin-left: -16px; */
+                height: 346px;
+                width: 332px;
+                padding: 0px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                border-radius: 35px;
+                margin-left: -29px;
+            }
+
+            .circle-size {
+                height: 42px;
+                width: 287px;
+                background: #FFFFFF;
+                border-radius: 61px;
+                padding: 1px 10px 1px 10px !important;
+                margin-top: -39px;
+                /* size: 90px; */
+                gap: -21px;
+            }
+
+            .bike-image{
+                /*padding: 54px 0px;*/
+                padding: 0px;
+                width: 363px;
+                margin-bottom: 58px;
+            }
+            .color-circle-1 {
+                width: 20px;       /* or whatever smaller size you want */
+                height: 20px;
+                border-radius: 50%;
+                display: inline-block;
+            }
+            .circle-size{
+                background: #FFFFFF;
+                border-radius: 61px;
+                padding: 1px 10px 1px 10px !important;
+                margin-top:-35px;
+                gap: 0px;
+            }
+            .mobile-colorset{
+                padding: 1px 1px 1px 1px;
+                margin-left: 10px;
+                /*max-width: 14px;*/
+            }
+            .color-name {
+                margin-left: 24px;
+                /* margin-bottom: -32px; */
+                border-radius: 39px;
+                background: #FFFFFF;
+                font-size: 9px;
+                padding: 12px 12px 12px 12px;
+                background: #FFFFFF;
+                /* width: 10px; */
+            }
+
+            .mobile-bookmow{
+                margin-left: -43px;
+            }
+            .image-hover-container {
+                margin-bottom: 1rem;
+            }
+
+        }
+
+        @media (min-width: 380px) {
+
+            .color-circle-1 {
+                position: relative; /* so the badge positions relative to this circle */
+            }
+
+            .star-badge {
+                position: absolute;
+                top: -6px;
+                right: -5px;
+                background-color: green;
+                border: 2px solid green;
+                color: white;
+                border-radius: 50%;
+                width: 14px;
+                height: 14px;
+                display: flex; /* always visible */
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+            .star-mark {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background-color: green;
+                color: white;
+                font-size: 12px;
+                font-weight: bold;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                margin-right: 5px;
+            }
+            .star-label {
+                margin-left: 19px;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                font-weight: 500;
+                color: #fff; /* Adjust if needed */
+            }
+
+
+            .bike-colorsec {
+                margin-bottom: -71px;
+                /* margin-left: -16px; */
+                height: 380px;
+                width: 368px;
+                padding: 0px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                border-radius: 35px;
+                margin-left: -30px;
+            }
+
+            .circle-size {
+                background: #FFFFFF;
+                border-radius: 61px;
+                padding: 3px 10px 1px 10px !important;
+                margin-top: -35px;
+                gap: 0px;
+            }
+
+        }
+        @media (min-width: 480px) {
+            .hero5-section-area .header-content-area{
+                margin-bottom: 0px;
+            }
+
+            .color-circle-1 {
+                position: relative; /* so the badge positions relative to this circle */
+            }
+
+            .star-badge {
+                position: absolute;
+                top: -6px;
+                right: -5px;
+                background-color: green;
+                border: 2px solid green;
+                color: white;
+                border-radius: 50%;
+                width: 16px;
+                height: 16px;
+                display: flex; /* always visible */
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+            .star-mark {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background-color: green;
+                color: white;
+                font-size: 12px;
+                font-weight: bold;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                margin-right: 5px;
+            }
+            .star-label {
+                margin-top: 5px;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                font-weight: 500;
+                color: #fff; /* Adjust if needed */
+            }
+
+
+            .bike-colorsec {
+                margin-bottom: -72px;
+                /* margin-left: -16px; */
+                height: 380px;
+                width: 385px;
+                padding: 0px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                border-radius: 35px;
+                margin-left: 33px;
+            }
+            .circle-size {
+                height: 47px;
+                width: 342px;
+                background: #FFFFFF;
+                border-radius: 61px;
+                padding: 1px 10px 1px 10px !important;
+                margin-top: -34px;
+                /* size: 90px; */
+                gap: -21px;
+            }
+
+            /*.imagesize{*/
+            /*    object-fit: cover;*/
+            /*    width: 100%;*/
+            /*    !*padding: 52px 76px;*!*/
+            /*    padding: 62px 53px;*/
+
+            /*}*/
+
+            .bike-image{
+
+                /*padding: 54px 0px;*/
+                padding: 0px;
+                width: 722px;
+                margin-bottom: 58px;
+            }
+
+            #color-section-1 .container {
+                width: 100%;
+            }
+
+            /*.pricing-circle{*/
+            /*    width: -24px;       !* or whatever smaller size you want *!*/
+            /*    height: 30px;*/
+            /*    !*border-radius: 20%;*!*/
+            /*    display: inline-block;*/
+            /*}*/
+
+
+            .mobile-colorset{
+                padding: 1px 1px 1px 1px;
+
+                /*max-width: 14px;*/
+            }
+
+
+            .color-circle-1 {
+                width: 30px;       /* or whatever smaller size you want */
+                height: 30px;
+                border-radius: 50%;
+                display: inline-block;
+            }
+            .circle-size{
+                gap: 0px;
+            }
+            /*.bike-image{*/
+
+            /*    !*padding: 54px 0px;*!*/
+            /*    padding: 0px;*/
+            /*    width: 180px;*/
+            /*    margin-bottom: 58px;*/
+            /*}*/
+
+            .color-name2{
+                font-size: 10px;
+                padding: 12px;
+                /*width: 10px;*/
+            }
+        }
+
+        @media (min-width: 768px) {
+
+        }
+
+        @media (min-width: 1024px) {
+            .color-picker-wrapper {
+                padding: 6px;
+                background-color: white;
+                border-radius: 40px;
+                max-width: 473px;
+                /*margin: auto;*/
+                position: relative;
+                margin-top: -22px;
+
+            }
+            /*.td-width{*/
+            /*    width: 200px;*/
+            /*}*/
+
+            .bike-background{
+                width: 80% !important;
+            }
+
+            .color-name-tooltip {
+                background-color: white;
+                /*padding: 8px;*/
+                padding: 5px 15px;
+                border-radius: 50px;
+                margin-bottom: 50px;
+                font-weight: bold;
+                /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+                font-size: 14px;
+            }
+
+            .color-circle-container {
+                /*background-color: #e9ecef;*/
+                /*padding: 0px;*/
+                /*padding: 12px 25px;*/
+                border-radius: 50px;
+                display: flex;
+                gap: 4px !important;
+                flex-wrap: wrap;
+
+            }
+
+            .standard{
+                width: 220px; /* Adjust as needed */
+                /*max-width: 150px;*/
+                padding: 0; /* Optional: Remove extra padding */
+            }
+
+            .color-circle-1 {
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: transform 0.2s ease-in-out;
+                position: relative;
+                border: 2px solid #ccc;
+            }
+
+            .color-circle-1.selected {
+                border: 2px solid #000;
+                transform: scale(1.1);
+            }
+
+            .bike-colorsec {
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                padding: 50px;
+                width: 100%;
+                height: 120%;
+                border-radius: 30px;
+                margin-bottom: 9px;
+            }
+            .imagesize {
+                object-fit: cover;
+                width: 100%;
+                /*padding: 52px 76px;*/
+                padding: 62px 53px;
+
+            }
+
+
+            .bike-image {
+
+                /*padding: 54px 0px;*/
+                padding: 0px;
+                width: 500px;
+                margin-bottom: 58px;
+            }
+            .image-hover-container {
+                margin-bottom: 0px;
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .bike-background{
+                width: 70% !important;
+            }
+        }
+
+        @media (min-width: 1366px) {
+
+            /*.colorcirclebg{*/
+            /*    background: #FFFFFF;*/
+            /*    border-radius: 61px;*/
+            /*    padding: 1px 10px 1px 10px !important;*/
+            /*    margin-top:-35px;*/
+
+            /*}*/
+
+
+            .icon-circle{
+                width: 66px;
+                height: 51px;
+            }
+
+            .color-picker-wrapper {
+                padding: 6px;
+                background-color: white;
+                border-radius: 40px;
+                max-width: 473px;
+                /*margin: auto;*/
+                position: relative;
+                margin-top: -22px;
+
+            }
+            /*.td-width{*/
+            /*    width: 200px;*/
+            /*}*/
+
+            .bike-background{
+                width: 60% !important;
+            }
+
+            .color-name-tooltip {
+                background-color: white;
+                /*padding: 8px;*/
+                padding: 5px 15px;
+                border-radius: 50px;
+                margin-bottom: 50px;
+                font-weight: bold;
+                /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+                font-size: 14px;
+            }
+
+            .color-circle-container {
+                /*background-color: #e9ecef;*/
+                /*padding: 0px;*/
+                /*padding: 12px 25px;*/
+                border-radius: 50px;
+                display: flex;
+                gap: 4px !important;
+                flex-wrap: wrap;
+
+            }
+
+            .standard{
+                width: 220px; /* Adjust as needed */
+                /*max-width: 150px;*/
+                padding: 0; /* Optional: Remove extra padding */
+            }
+
+            .color-circle-1 {
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: transform 0.2s ease-in-out;
+                position: relative;
+                border: 2px solid #ccc;
+            }
+
+            .color-circle-1.selected {
+                border: 2px solid #000;
+                transform: scale(1.1);
+            }
+
+            .bike-colorsec {
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                padding: 50px;
+                width: 100%;
+                height: 120%;
+                border-radius: 30px;
+                margin-bottom: 9px;
+            }
+            .imagesize {
+                object-fit: cover;
+                width: 100%;
+                /*padding: 52px 76px;*/
+                padding: 62px 53px;
+
+            }
+
+
+            .bike-image {
+
+                /*padding: 54px 0px;*/
+                padding: 0px;
+                width: 500px;
+                margin-bottom: 58px;
+            }
+
+
+        }
+
+        @media (min-width: 1920px) {
+            .icon-circle{
+                width: 50px;
+                height: 50px;
+            }
+
+            .color-circle-1 {
+                position: relative; /* so the badge positions relative to this circle */
+            }
+
+            .star-badge {
+                position: absolute;
+                top: -5px;
+                right: -5px;
+                background-color: green;
+                border: 2px solid green;
+                color: white;
+                border-radius: 50%;
+                width: 16px;
+                height: 16px;
+                display: flex; /* always visible */
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+            .star-mark {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background-color: green;
+                color: white;
+                font-size: 12px;
+                font-weight: bold;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                margin-right: 5px;
+            }
+
+            .star-label {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                font-weight: 500;
+                color: #fff; /* Adjust if needed */
+            }
+
+
+            .card1920{
+                padding: 40px 23px 104px 23px;
+            }
+
+
+
+
+            /*.star-badge {*/
+            /*    position: absolute;*/
+            /*    top: -5px;*/
+            /*    right: -5px;*/
+            /*    background-color: green;*/
+            /*    border: 2px solid white;*/
+            /*    color: white;*/
+            /*    border-radius: 50%;*/
+            /*    width: 18px;*/
+            /*    height: 18px;*/
+            /*    display: flex !important;   !* Always visible *!*/
+            /*    opacity: 1 !important;      !* Fully visible *!*/
+            /*    visibility: visible !important;*/
+            /*    align-items: center;*/
+            /*    justify-content: center;*/
+            /*    font-size: 12px;*/
+            /*    font-weight: bold;*/
+            /*}*/
+
+            /* Your styles for screens larger than 1920px */
+            .bike-colorsec {
+                margin-bottom: -79px;
+                /* margin-left: -16px; */
+                height: 550px;
+                width: 1132px;
+                padding: 0px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                border-radius: 35px;
+                margin-left: 33px;
+
+                /*margin-bottom: -46px;*/
+                /*!* margin-left: -16px; *!*/
+                /*height: 468px;*/
+                /*width: 1032px;*/
+                /*padding: 0px;*/
+                /*background-repeat: no-repeat;*/
+                /*background-position: center;*/
+                /*background-size: cover;*/
+                /*border-radius: 35px;*/
+                /*margin-left: 33px;*/
+            }
+            .bike-image{
+
+                /*padding: 54px 0px;*/
+                padding: 0px;
+                width: 722px;
+                margin-bottom: 58px;
+            }
+            .circle-size {
+                height: 47px;
+                width: 342px;
+                background: #FFFFFF;
+                border-radius: 61px;
+                padding: 1px 10px 1px 10px !important;
+                margin-top: -34px;
+                /* size: 90px; */
+                gap: -21px;
+            }
+        }
+
+        /*@media (min-width: 1920px) {*/
+        /*    .bike-colorsec {*/
+        /*        background-size: cover;*/
+        /*        background-position: center;*/
+        /*        background-repeat: no-repeat;*/
+        /*        padding: 50px;*/
+        /*        width: 100%;*/
+        /*        height: 110%;*/
+        /*        border-radius: 30px;*/
+        /*    }*/
+        /*}*/
+        .text-anime-style-2{
+            margin-bottom: 30px;
+        }
+
+
+        .fsize {
+            font-weight: 800;
+        }
+        .fsizespan{
+            font-weight :400;
+        }
+
+        .spec-row {
+            display: flex;
+            align-items: center;
+            /*border-bottom: 1px solid #ddd;*/
+        }
+
+        .spec-name {
+            font-size: 14px;
+            color:#7b7b7b;
+        }
+        .spec-name,
+        .spec-value-column {
+            flex: 1;
+            padding: 30px 12px;
+            text-align: left;
+        }
+        @media (max-width: 768px) {
+            .spec-row {
+                flex-wrap: wrap;
+                text-align: center;
+                margin-bottom: 17px;
+            }
+
+            .spec-name {
+                flex: 0 0 100%;
+                font-size: 14px;
+                font-weight: 500;
+                text-align: left;
+                padding: 4px 12px;
+                background: #f9f9f9;
+            }
+
+            .spec-value-column {
+                display:flex;
+                font-size: 16px;
+                text-align: left;
+                padding: 5px 12px;
+            }
+            .spec-row.header .spec-value-column {
+                display: block;
+            }
+        }
+        /* ════ LET'S TALK SECTION ════ */
+        .lets-talk {
+            position: relative;
+            padding: 120px 0;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background: linear-gradient(
+                135deg,
+                rgba(10, 10, 10, 0.55),
+                rgba(150, 150, 150, 0.25)
+            );
+        }
+
+        .lets-talk::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                135deg,
+                rgba(0, 0, 0, 0.75),
+                rgba(10, 10, 10, 0.45)
+            );
+            z-index: 1;
+        }
+
+        .lets-talk .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .lets-talk h5 {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.4);
+            animation: fadeUp 1s ease;
+        }
+
+        /* BUTTON STYLE */
+        .button-2 {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 38px;
+            background: linear-gradient(135deg, #ffffff, #f1f1f1);
+            color: #111 !important;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 60px;
+            text-decoration: none;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .button-2::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(135deg, #d4af37, #f5d76e);
+            transition: 0.5s ease;
+            z-index: -1;
+        }
+
+        .button-2:hover::before {
+            width: 100%;
+        }
+
+        .button-2:hover {
+            transform: translateY(-5px) scale(1.03);
+            color: #000 !important;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+        }
+
+        .button-2 span {
+            transition: transform 0.3s ease;
+        }
+
+        .button-2:hover span {
+            transform: translate(4px, -4px);
+        }
+
+        /* ANIMATION */
+        @keyframes  fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .lets-talk {
+                padding: 90px 20px;
+                background-attachment: scroll;
+            }
+
+            .lets-talk h5 {
+                font-size: 2rem;
+                line-height: 1.4;
+            }
+
+            .button-2 {
+                padding: 14px 28px;
+                font-size: 15px;
+            }
+        }
+
+        #testdriveCloseModal {
+            filter: brightness(0) invert(1);
+        }
+        .homepage4-body {
+            overflow-x: visible;
+        }
+
+
+        #sub:disabled {
+            cursor: not-allowed;   /* Show disabled look */
+            opacity: 0.6;          /* Optional: make it look disabled */
+            pointer-events: auto;  /* Re-enable hover effect */
+        }
+
+        #sub:disabled:hover {
+            background-color: #100f0f; /* Keep same background */
+            color: white;
+            cursor: not-allowed;       /* Mouse pointer shows as blocked */
+        }
+
+        #success-message {
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            animation: fadeInScale 0.5s ease-in-out;
+
+        }
+        #popup-main-img {
+            width: 400px;
+            height: 550px;
+        }
+
+        @keyframes  fadeInScale {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        /* Large Screens (1920px and above) */
+        @media (min-width: 1920px) {
+            #popup-main-img {
+                width: 500px;
+                height: 650px;
+            }
+            #popup-img img{
+                width: 500px!important;
+                /*height: 650px!important;*/
+            }
+        }
+
+        /* Standard Laptop Screens (1366px) */
+        @media (max-width: 1366px) {
+            #popup-main-img {
+                width: 380px;
+                height: 520px;
+            }
+        }
+
+        /* Tablet (max-width: 990px) */
+        @media (max-width: 990px) {
+            #popup-main-img {
+                width: 320px;
+                height: 450px;
+            }
+        }
+
+        /* Mobile (max-width: 480px) */
+        @media (max-width: 480px) {
+            #popup-main-img {
+                width: 260px;
+                height: 370px;
+            }
+        }
+
+        /* Small Mobile (max-width: 400px) */
+        @media (max-width: 400px) {
+            #popup-main-img {
+                width: 230px;
+                height: 340px;
+            }}
+        #popup-img img{
+            width: 750px!important;
+            /*height: 600px!important;*/
+        }
+    
