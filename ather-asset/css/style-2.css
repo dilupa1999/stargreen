@@ -1595,7 +1595,7 @@ background-color: black;
     color: #ffffff !important;
 }
 
-img[src*="Stealth Blue.png"], img[src*="Stealth%20Blue.png"] {
+img[src*="Stealth Blue.png"], img[src*="Stealth%20Blue.png"], img[src*="Lunar Grey.png"], img[src*="Lunar%20Grey.png"], img[src*="red.png"] {
     transform: scale(0.75);
     transition: transform 0.3s ease;
 }
