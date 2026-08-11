@@ -1387,10 +1387,210 @@ background-color: black;
     #performance {
         background-color: #000000;
         margin-top: -10px;
+        font-size: 20px;
+        font-style: normal;
+        line-height: 24px;
+        margin-bottom: -16px;
+    }
+    #safety .custom-slider-width {
+    width: 446px;
+    height: 440px;
+}
+#safety .custom-slider-width1 {
+    height: 440px;
+    margin-left: 75px;
+    width: 285px;
+}
+#safety .custom-slider-width2 {
+    width: 285px;
+    margin-left: -10px;
+    height: 440px;
+}
+#safety .custom-slider-width3 {
+    width: 285px;
+    margin-left: -95px;
+    height: 440px;
+}
+ #convenience .custom-slider-width1 {
+        height: 440px;
+        margin-left: 130px;
+        width: 285px;
+    }
+    #convenience .custom-slider-width2 {
+        width: 285px;
+        margin-left: 58px;
+        height: 440px;
+    }
+    #convenience .custom-slider-width3 {
+        width: 285px;
+        margin-left: -17px;
+        height: 440px;
+    }
+}
+@media (min-width: 768px){
+    .homepage4-body .header-area.homepage4 .header-elements .main-menu ul li a {
+        padding: 0 10px;
+    }
+}
+@media (min-width: 1024px){
+    .homepage4-body .header-area.homepage4 .header-elements .main-menu ul li a {
+        padding: 0 6px;
+    }
+    .header-btn12 {
+        padding: 9px 12px;
+    }
+}
+@media (min-width: 1280px){
+    .homepage4-body .header-area.homepage4 .header-elements .main-menu ul li a {
+        padding: 0 10px;
+    }
+}
+@media (min-width: 1366px) {
+
+    .homepage4-body .header-area.homepage4 .header-elements .main-menu ul li a {
+        font-size: 13px;
+        padding: 0 14px;
+    }
+
+
+    .sec-col2 h3{
+        color: #f7f7f7 !important;
+        font-size: 20px;
+        font-style: normal;
+        line-height: 24px;
+        margin-bottom: -16px;
+    }
+    #safety .custom-slider-width1 {
+        height: 440px;
+        margin-left: 130px;
+        width: 300px;
+    }
+    #safety .custom-slider-width2 {
+        width: 300px;
+        margin-left: 58px;
+        height: 440px;
+    }
+    #safety .custom-slider-width3 {
+        width: 300px;
+        margin-left: -17px;
+        height: 440px;
+    }
+    #safety .custom-slider-width {
+        width: 490px;
+        height: 440px;
+    }
+    #convenience .custom-slider-width1 {
+        height: 440px;
+        margin-left: 130px;
+        width: 300px;
+    }
+    #convenience .custom-slider-width2 {
+        width: 300px;
+        margin-left: 58px;
+        height: 440px;
+    }
+    #convenience .custom-slider-width3 {
+        width: 300px;
+        margin-left: -17px;
+        height: 440px;
+    }
+}
+@media (min-width: 1520px) {
+    .homepage4-body .header-area.homepage4 .header-elements .main-menu ul li a {
+        font-size: 13px;
+        /*padding:0 16px;*/
+    }
+    .sec-col2 h3{
+        color: #f7f7f7 !important;
+        font-size: 20px;
+        font-style: normal;
+        line-height: 24px;
+        margin-bottom: -16px;
+    }
+    #safety .custom-slider-width1 {
+        height: 440px;
+        margin-left: 75px;
+        width: 340px;
+    }
+    #safety .custom-slider-width2 {
+        width: 340px;
+        margin-left: -10px;
+        height: 440px;
+    }
+    #safety .custom-slider-width3 {
+        width: 340px;
+        margin-left: -95px;
+        height: 440px;
+    }
+    #convenience .custom-slider-width1 {
+        height: 440px;
+        margin-left: 75px;
+        width: 340px;
+    }
+    #convenience .custom-slider-width2 {
+        width: 340px;
+        margin-left: -10px;
+        height: 440px;
+    }
+    #convenience .custom-slider-width3 {
+        width: 340px;
+        margin-left: -95px;
+        height: 440px;
+    }
+}
+@media (min-width: 1920px) {
+    .homepage4-body .header-area.homepage4 .header-elements .main-menu ul li a {
+        font-size: 14px;
+    }
+    .sec-col2 h3{
+        color: #f7f7f7 !important;
+        font-size: 20px;
+        font-style: normal;
+        line-height: 24px;
+        margin-bottom: -16px;
+    }
+    #safety .custom-slider-width1 {
+        height: 440px;
+        margin-left: 75px;
+        width: 340px;
+    }
+    #safety .custom-slider-width2 {
+        width: 340px;
+        margin-left: -10px;
+        height: 440px;
+    }
+    #safety .custom-slider-width3 {
+        width: 340px;
+        margin-left: -95px;
+        height: 440px;
+    }
+    #convenience .custom-slider-width1 {
+        height: 440px;
+        margin-left: 75px;
+        width: 340px;
+    }
+    #convenience .custom-slider-width2 {
+        width: 340px;
+        margin-left: -10px;
+        height: 440px;
+    }
+    #convenience .custom-slider-width3 {
+        width: 340px;
+        margin-left: -95px;
+        height: 440px;
+    }
+    #performance {
+        background-color: #000000;
+        margin-top: -10px;
     }
 }
 
 /* Footer text */
 
+.mobile-header {
+    background-color: #000000 !important;
+}
 
-
+.mobile-header .mobile-nav-icon i {
+    color: #ffffff !important;
+}
