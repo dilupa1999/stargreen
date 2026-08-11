@@ -1594,3 +1594,12 @@ background-color: black;
 .mobile-header .mobile-nav-icon i {
     color: #ffffff !important;
 }
+
+img[src*="Stealth Blue.png"], img[src*="Stealth%20Blue.png"] {
+    transform: scale(0.75);
+    transition: transform 0.3s ease;
+}
+
+.mobile-header .mobile-nav-icon i {
+    color: #ffffff !important;
+}
