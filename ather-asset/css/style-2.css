@@ -43,10 +43,18 @@ p{
     top: -34px;
 }
 #ather450 {
-    background-image: url('../img/ather/450-banner-bike-of-scooters-d-new.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#ather450 .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 .service1-section-area .service2-boxarea .icons img {
     width: 50px;
