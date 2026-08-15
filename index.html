@@ -1105,90 +1105,119 @@
 
 
 
-    <section id="color-section-1" class="bg-black">
-        <div class="container bike-background">
-            <div class="row">
-                <div class="text-center mb-5">
-                    <h2 class="section-title text-light">3 flying colours</h2>
+    <section id="color-section-1" class="py-5" style="background: #080808; overflow: hidden; position: relative;">
+        <!-- Dynamic Glow Background -->
+        <div id="dynamic-glow" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60vw; height: 60vw; border-radius: 50%; background: radial-gradient(circle, rgba(91, 124, 153, 0.15) 0%, transparent 70%); filter: blur(60px); z-index: 0; transition: background 0.8s ease;"></div>
+
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="color: #fff; font-size: 42px; letter-spacing: -1px;">Colours</h2>
+                <p style="color: #888; font-size: 16px;">Pick your aesthetic. Own your style.</p>
+            </div>
+
+            <div class="row align-items-center justify-content-center">
+                <!-- Bike Display Area -->
+                <div class="col-lg-8 mb-4 text-center">
+                    <div class="bike-showcase p-4" style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 30px; backdrop-filter: blur(10px); position: relative; display: flex; justify-content: center; min-height: 400px; align-items: center;">
+                        <!-- Bike Background -->
+                        <div id="bike-bg-layer" style="position: absolute; inset: 0; border-radius: 30px; background-image: url('ather-asset/images/Stealth%20Blue2%20-%20Bg.png'); background-size: cover; background-position: center; opacity: 0.6; transition: opacity 0.5s ease; mix-blend-mode: lighten;"></div>
+                        
+                        <!-- Bike Image -->
+                        <img src="ather-asset/images/Stealth%20Blue.png" id="bike-image-1" class="img-fluid" alt="Ather electric scooter" style="position: relative; z-index: 2; transition: opacity 0.4s ease, transform 0.4s ease; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5)); max-height: 450px; object-fit: contain;">
+                    </div>
                 </div>
 
-                <div class="row justify-content-center mb-5">
-                    <div class="text-center">
-                        <div class=" bike-colorsec mobilebike-color"style="background-image: url('ather-asset/images/Stealth%20Blue2%20-%20Bg.png')">
-
-                            <img src="ather-asset/images/Stealth%20Blue.png" id="bike-image-1" class="img-fluid imagesize bike-image " alt="Ather electric scooter in Sri Lanka">
-                            
-                        </div>
-                    </div>
-                    <div class=" d-flex flex-column align-items-center">
-                        <!-- Color name bubble -->
+                <!-- Color Selection Panel -->
+                <div class="col-lg-12 mt-3">
+                    <div class="d-flex flex-wrap justify-content-center gap-3 color-selector-container">
                         
-                        <div class="row justify-content-center">
-                            <div class="text-center title-comic color-name-tooltip  color-name2">
-                                <p id="bike-title-1" class="color-name">STEALTH BLUE</p>
-                            </div>
-                        </div>
+                        <!-- Stealth Blue -->
+                        <button class="color-pill active" 
+                                data-color-hex="#5B7C99"
+                                data-image="ather-asset/images/Stealth Blue.png"
+                                data-bg="ather-asset/images/Stealth%20Blue2%20-%20Bg.png"
+                                data-title="STEALTH BLUE"
+                                style="--accent: #5B7C99;">
+                            <span class="color-dot"></span>
+                            <span class="color-name">Stealth Blue</span>
+                            <span class="badge rounded-pill bg-danger ms-2" style="font-size: 10px; box-shadow: 0 0 10px rgba(255,0,0,0.5);">NEW</span>
+                        </button>
 
-                        <div class="row justify-content-center colorcirclebg mobile-colorset">
-                            <div class="d-flex flex-wrap justify-content-center colorcircle circle-size">
+                        <!-- Lunar Grey -->
+                        <button class="color-pill" 
+                                data-color-hex="#BCC0C4"
+                                data-image="ather-asset/images/Lunar Grey.png"
+                                data-bg="ather-asset/images/Colours%20-%20Bg.webp"
+                                data-title="LUNAR GREY"
+                                style="--accent: #BCC0C4;">
+                            <span class="color-dot"></span>
+                            <span class="color-name">Lunar Grey</span>
+                        </button>
 
-                                <div class="color-circle-1 gapof_circle star-badge-target"
-                                     style="background-color: #5B7C99;"
-                                     data-image="ather-asset/images/Stealth Blue.png"
-                                     data-title="STEALTH BLUE">
-                                    <div class="star-badge">★</div>
-                                </div>
+                        <!-- True Red -->
+                        <button class="color-pill" 
+                                data-color-hex="#FF0000"
+                                data-image="ather-asset/images/red.png"
+                                data-bg="ather-asset/images/Colours%20-%20Bg.webp"
+                                data-title="TRUE RED"
+                                style="--accent: #FF0000;">
+                            <span class="color-dot"></span>
+                            <span class="color-name">True Red</span>
+                        </button>
 
-                                <!--<div class="color-circle-1 gapof_circle star-badge-target"-->
-                                <!--     style="background-color: #C2B280;"-->
-                                <!--     data-image="https://atherenergy.lk/ather-asset/images/Hyper Sand.webp"-->
-                                <!--     data-title="HYPER SAND">-->
-                                <!--    <div class="star-badge">★</div>-->
-                                <!--</div>-->
-
-                                <!--<div class="color-circle-1 gapof_circle"-->
-                                <!--     style="background-color: #FF0000;"-->
-                                <!--     data-image="https://atherenergy.lk/ather-asset/images/True Red.webp"-->
-                                <!--     data-title="TRUE RED"></div>-->
-
-
-                                <div class="color-circle-1 gapof_circle"
-                                     style="background-color: #BCC0C4;"
-                                     data-image="ather-asset/images/Lunar Grey.png"
-                                     data-title="LUNAR GREY"></div>
-
-                                <!--<div class="color-circle-1 gapof_circle "-->
-                                <!--     style="background-color: #000000;"-->
-                                <!--     data-image="https://atherenergy.lk/ather-asset/images/Cosmic Black.webp"-->
-                                <!--     data-title="COSMIC BLACK">-->
-
-                                <!--</div>-->
-
-                                <div class="color-circle-1 gapof_circle"
-                                     style="background-color: #FF0000;"
-                                     data-image="ather-asset/images/red.png"
-                                     data-title="TRUE RED"></div>
-
-
-
-                                <!--<div class="color-circle-1 gapof_circle"-->
-                                <!--     style="background-color: #FFFFFF;"-->
-                                <!--     data-image="https://atherenergy.lk/ather-asset/images/Still White.webp"-->
-                                <!--     data-title="STILL WHITE"></div>-->
-
-
-
-                            </div>
-
-
-                        </div>
-                        <div class="star-label mt-3">
-                            <div class="star-mark">★</div> New Colour
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <style>
+            .color-pill {
+                background: rgba(255, 255, 255, 0.03);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 50px;
+                padding: 12px 24px;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                color: #aaa;
+                font-weight: 600;
+                font-size: 15px;
+                letter-spacing: 0.5px;
+                cursor: pointer;
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                position: relative;
+                overflow: hidden;
+                outline: none;
+            }
+            .color-pill .color-dot {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background: var(--accent);
+                box-shadow: 0 0 10px var(--accent);
+                transition: transform 0.3s ease;
+            }
+            .color-pill:hover {
+                background: rgba(255, 255, 255, 0.08);
+                color: #fff;
+                transform: translateY(-2px);
+            }
+            .color-pill.active {
+                background: rgba(255, 255, 255, 0.1);
+                border-color: var(--accent);
+                color: #fff;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.2), inset 0 0 15px rgba(255,255,255,0.05);
+            }
+            .color-pill.active .color-dot {
+                transform: scale(1.2);
+                box-shadow: 0 0 15px var(--accent);
+            }
+            /* Animation class for image fade in/out */
+            .fade-transition {
+                opacity: 0 !important;
+                transform: scale(0.95) !important;
+            }
+        </style>
     </section>
 
     <div class="lets-talk bg-img bg-fixed section-padding" data-overlay-dark="5" data-background="asset-ev/avaimg/power-reev_03.html">
@@ -2475,31 +2504,39 @@
 
 
     <script>
-        document.querySelectorAll('.color-circle-1').forEach(circle => {
-            circle.addEventListener('click', function () {
+        document.querySelectorAll('.color-pill').forEach(pill => {
+            pill.addEventListener('click', function () {
+                // Remove active from all
+                document.querySelectorAll('.color-pill').forEach(p => p.classList.remove('active'));
+                // Add active to clicked
+                this.classList.add('active');
+
                 const imageUrl = this.getAttribute('data-image');
-                const bikeTitle = this.getAttribute('data-title');
+                const bgUrl = this.getAttribute('data-bg');
+                const hexColor = this.getAttribute('data-color-hex');
+                
+                const bikeImg = document.getElementById('bike-image-1');
+                const bikeBg = document.getElementById('bike-bg-layer');
+                const dynamicGlow = document.getElementById('dynamic-glow');
 
-                // Update bike image and title
-                document.getElementById('bike-image-1').src = imageUrl;
-                document.getElementById('bike-title-1').textContent = bikeTitle;
-
-                // Change background image based on selected color
-                const bikeBg = document.querySelector('.bike-colorsec');
-
-                if (bikeTitle === 'STEALTH BLUE') {
-                    bikeBg.style.backgroundImage = "url('ather-asset/images/Stealth%20Blue2%20-%20Bg.png')";
-                }
-                else if (bikeTitle === 'HYPER SAND') {
-                    bikeBg.style.backgroundImage = "url('ather-asset/images/Hyper%20Sand%20-%20Bg.webp')";
-                }
-                else {
-                    bikeBg.style.backgroundImage = "url('ather-asset/images/Colours%20-%20Bg.webp')";
-                }
+                // Fade out
+                bikeImg.classList.add('fade-transition');
+                bikeBg.style.opacity = '0';
+                
+                setTimeout(() => {
+                    // Update sources
+                    bikeImg.src = imageUrl;
+                    bikeBg.style.backgroundImage = `url('${bgUrl}')`;
+                    
+                    // Update glow
+                    dynamicGlow.style.background = `radial-gradient(circle, ${hexColor}33 0%, transparent 70%)`;
+                    
+                    // Fade in
+                    bikeImg.classList.remove('fade-transition');
+                    bikeBg.style.opacity = '0.6';
+                }, 300); // Wait for fade out to complete
             });
         });
-
-
     </script>
 
     <script>
